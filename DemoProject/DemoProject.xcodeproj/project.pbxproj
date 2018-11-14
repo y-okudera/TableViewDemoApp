@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64A81614219C70BA00877CBE /* UIImage+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A81613219C70BA00877CBE /* UIImage+Percentage.swift */; };
 		64B21C072198880E00A3A683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B21C062198880E00A3A683 /* AppDelegate.swift */; };
 		64B21C0E2198881100A3A683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B21C0D2198881100A3A683 /* Assets.xcassets */; };
 		64B21C112198881100A3A683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B21C0F2198881100A3A683 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64A81613219C70BA00877CBE /* UIImage+Percentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Percentage.swift"; sourceTree = "<group>"; };
 		64B21C032198880E00A3A683 /* DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B21C062198880E00A3A683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64B21C0D2198881100A3A683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		64DD74F1219B169600F41A1E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				64A81613219C70BA00877CBE /* UIImage+Percentage.swift */,
 				64DD74F2219B16A200F41A1E /* UITextField+DoneToolbar.swift */,
 			);
 			path = UIKit;
@@ -243,6 +246,7 @@
 				64DD74E8219B0B8900F41A1E /* NibRegistrable.swift in Sources */,
 				64B21C072198880E00A3A683 /* AppDelegate.swift in Sources */,
 				64DD74DF219B099400F41A1E /* UserInfoViewController.swift in Sources */,
+				64A81614219C70BA00877CBE /* UIImage+Percentage.swift in Sources */,
 				64DD74EC219B0E4A00F41A1E /* UserInfoItem.swift in Sources */,
 				64DD74EF219B13E100F41A1E /* UserInfoCell.swift in Sources */,
 			);

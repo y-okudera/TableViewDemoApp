@@ -14,6 +14,8 @@ struct UserInfoItem {
     static let name = "氏名"
     /// フリガナ
     static let phonetic = "フリガナ"
+    /// 年齢
+    static let age = "年齢"
     /// メールアドレス
     static let mailAddress = "メールアドレス"
     /// パスワード

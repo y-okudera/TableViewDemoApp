@@ -10,6 +10,8 @@ import UIKit
 
 final class UserInfoViewController: UIViewController {
     
+    private let startColor = #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)
+    private let endColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
     private var userInfoItems = [String]()
 
     @IBOutlet weak var tableView: UITableView!
@@ -28,6 +30,7 @@ final class UserInfoViewController: UIViewController {
         userInfoItems = [
             UserInfoItem.name,
             UserInfoItem.phonetic,
+            UserInfoItem.age,
             UserInfoItem.mailAddress,
             UserInfoItem.password,
             UserInfoItem.tel,
@@ -105,6 +108,15 @@ extension UserInfoViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: UserInfoCell.identifier,
                                                  for: indexPath) as! UserInfoCell
         cell.titleLabel.text = userInfoItems[indexPath.row]
+        
+        let per = (CGFloat(indexPath.row) + 1.0) / CGFloat(userInfoItems.count)
+        print(String(format: "indexPath.row: %d per: %.2f", indexPath.row, per))
+        
+        cell.backgroundColor = UIColor.colorForOffsetPercentage(
+            percentage: per,
+            beforeColor: startColor,
+            afterColor: endColor
+        )
         return cell
     }
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,31 +20,21 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYM-NY-cPb">
-                        <rect key="frame" x="16" y="11" width="288" height="21"/>
+                        <rect key="frame" x="16" y="33.5" width="288" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1og-N0-DoU">
-                        <rect key="frame" x="16" y="47" width="288" height="30"/>
-                        <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="1og-N0-DoU" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="3SB-5I-ahO"/>
+                    <constraint firstItem="uYM-NY-cPb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0h4-EW-I4l"/>
                     <constraint firstItem="uYM-NY-cPb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="7NE-Fx-ZOA"/>
-                    <constraint firstItem="1og-N0-DoU" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="9Xn-dE-9DR"/>
-                    <constraint firstItem="uYM-NY-cPb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="oiU-7z-2gq"/>
-                    <constraint firstItem="1og-N0-DoU" firstAttribute="top" secondItem="uYM-NY-cPb" secondAttribute="bottom" constant="15" id="sDM-Eh-Zwu"/>
                     <constraint firstItem="uYM-NY-cPb" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xk3-XG-1NE"/>
-                    <constraint firstItem="1og-N0-DoU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="yja-Ag-E8V"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="textField" destination="1og-N0-DoU" id="lKP-92-d2V"/>
                 <outlet property="titleLabel" destination="uYM-NY-cPb" id="cu2-9s-3HR"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="123.23838080959521"/>
